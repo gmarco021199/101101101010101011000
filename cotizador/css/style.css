@@ -1,0 +1,125 @@
+:root{
+    --primario: #FFFFFF;
+    --primarioOscuro: #1D3F8F;
+    --secundario: #000000;
+    --secundarioOscuro: rgb(233,287,2);
+    --blanco: #FFF;
+    --negro: #000;
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** GLOBALES **/
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+p{
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.barra{
+    color:(#1D3F8F);
+}
+h1,h2{
+    text-align: center;
+    color:var(--secundario);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+}
+h1{font-size:4rem;}
+h2{font-size: 3.2rem;}
+h3{
+    color:var(--negro);
+    font-size: 2.4rem;
+}
+
+/*HEADER*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.heder__logo{
+    margin: 3rem 0;
+}
+/*FOOTER*/
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    
+}
+.footer__texto{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+}
+.barra{
+    justify-content: center;
+    background-color: var(--primarioOscuro);
+    color:var(--blanco);
+    padding: 1rem 0;
+    display: flex;
+   
+}
+/*NAVEGACION*/
+
+.navegacion{
+    background-color:#DDDDDD;
+    display: flex;
+    justify-content: center;
+}
+
+/*BOTONES*/
+.btn-primary
+{
+color: #fff;
+background-color: #1D3F8F;
+border-color: #1D3F8F;
+}
+.btn-danger
+{
+color: #fff;
+background-color: #DD4B39;
+border-color: #DD4B39;
+}
+   /*FLOTANTE*/
+
+    .ir-arriba{
+         display:none;
+          cursor:pointer;
+          position:fixed;
+          z-index:2;
+          width:60px;
+          height:60px;
+          border-radius:100%;
+          background:#F44336;
+          bottom:10px;
+          right:10px;
+          margin-right:16px;
+          margin-bottom:16px;
+          border:none;
+          outline:none;
+          color:#FFF;
+          font-size:36px;
+}
